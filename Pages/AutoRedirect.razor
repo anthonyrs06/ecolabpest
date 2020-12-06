@@ -1,0 +1,17 @@
+@page "/AutoRedirect"
+
+@inject HttpClient Http
+@inject NavigationManager Nav
+
+@attribute [Authorize]
+
+<h1>Auto redirect demo</h1>
+
+
+
+@code {
+     protected override void OnInitialized()
+    {
+        Nav.NavigateTo("https://m365x381747.sharepoint.com/", true); 
+    }
+}
